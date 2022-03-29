@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook | clone - web version</title>
+    <link rel="stylesheet" href="./src/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    
+    <!--  NAVBAR START  -->
+    <nav>
+
+        <div class="container">
+            <!-- LEFT NAVBAR START -->
+            <div class="nav-left">
+
+                <a href="" class="logo-content">
+                    <h1 class="logo">f</h1>
+                </a>
+                <form action="search.php" method="get" class="search-bar">
+                    <button type="submit" class="bx bx-search"></button>
+                    <input type="search" name="q" class="search-input" placeholder="Rechercher sur facebook">
+                </form>
+
+            </div>
+            <!-- LEFT NAVBAR START -->
+            <!-- MIDDLE NAVBAR START -->
+            <div class="nav-middle">
+
+                <ul class="nav-menu">
+                    <li class="nav-link active">
+                        <a href="" class="nav-item bx bxs-home"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-item bx bx-movie-play icon">
+                            <span class="count-notif">9+</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-item bx bx-shopping-bag icon">
+                            <span class="count-notif">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-item bx bx-group icon"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-item bx bx-layout"></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- MIDDLE NAVBAR START -->
+            <!-- RIGHT NAVBAR START -->
+            <div class="nav-right">
+
+                <a href="" class="profile-nav">
+                    <img src="src/img/img.jpg">
+                    <p>Nekena</p>
+                </a>
+                <div class="right-menu">
+                    <ul class="menu-icon">
+
+                        <li>
+                            <a class="icon bx bx-menu"></a>
+                        </li>
+                        <li>
+                            <a class="icon bx bxl-messenger">
+                                <span class="count-notif">3</span>
+                            </a>
+                        </li>
+                        <li><a class="icon bx bxs-bell">
+                                <span class="count-notif">9+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon bx bxs-down-arrow" onclick="openNav('.root-menu');"></a>
+                            <div class="nav-drop-menu root-menu">
+                                <div class="menu main-root-menu">
+                                    <a href="" class="content">
+                                        <img src="src/img/img.jpg">
+                                        <div class="details">
+                                            <p>Nekena</p>
+                                            <span>voir votre profile</span>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="" class="content">
+                                        <span class="icon bx bx-comment-error"></span>
+                                        <div class="details">
+                                            <p>Donnez votre avis</p>
+                                            <span>Aidez-nous à améliorer la nouvelle version du facebook</span>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a class="content" onclick="openParams('.param-menu')">
+                                        <span class="icon bx bx-cog"></span>
+                                        <div class="details">
+                                            <p>Paramétre et confidentialité</p>
+                                        </div>
+                                        <span class="bx bx-chevron-right link"></span>
+                                    </a>
+                                    <a class="content" onclick="openParams('.help-menu')">
+                                        <span class="icon bx bx-help-circle"></span>
+                                        <div class="details">
+                                            <p>Aide et assistance</p>
+                                        </div>
+                                        <span class="bx bx-chevron-right link"></span>
+                                    </a>
+                                    <a class="content" onclick="openParams('.display-menu')">
+                                        <span class="icon bx bx-moon"></span>
+                                        <div class="details">
+                                            <p>Affichage et accéssibilité</p>
+                                        </div>
+                                        <span class="bx bx-chevron-right link"></span>
+                                    </a>
+                                    <a href="" class="content" onclick="openParams('.display-menu')">
+                                        <span class="icon bx bx-door-open"></span>
+                                        <div class="details">
+                                            <p>Se déconnecter</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- RIGHT NAVBAR START -->
+        </div>
+
+    </nav>
+    <!--  NAVBAR END  -->
+
+    <!--  CONTAINER START  -->
+    <div class="wrapper">
+        <div class="container">
+            <!--  Left container start  -->
+            <div class="left-container">
+                <div class="content">
+                    <ul class="menu-item">
+                        
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/img/img.jpg">
+                                <span class="details">
+                                    <p>Nekena</p>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/icon/friends.png">
+                                <span class="details">
+                                    <p>Amis</p>
+                                    <span><i class="bx bxs-circle"></i> 1 invitation</span>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/icon/page.png">
+                                <span class="details">
+                                    <p>Pages</p>
+                                    <span><i class="bx bxs-circle"></i> 9 nouveaux</span>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/icon/groupepng.png">
+                                <span class="details">
+                                    <p>Groupes</p>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/icon/market.png">
+                                <span class="details">
+                                    <p>Marketplace</p>
+                                    <span><i class="bx bxs-circle"></i> 1 nouveau</span>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/icon/wathpng.png">
+                                <span class="details">
+                                    <p>watch</p>
+                                    <span><i class="bx bxs-circle"></i> 9 nouvelles vidéos</span>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <span class="bx bx-chevron-down readmore"></span>
+                                <span class="details">
+                                    <p>voir plus</p>
+                                </span>
+                            </a> 
+                        </li>
+
+                    </ul>
+                    <ul class="menu-item">
+                        <h1>Vos raccourcis</h1>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/img/img.jpg">
+                                <span class="details">
+                                    <p>Web Create</p>
+                                </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="" class="item">
+                                <img src="src/img/img.jpg">
+                                <span class="details">
+                                    <p>Zayaa OG</p>
+                                </span>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--  Left container end  -->
+            <!--  middle container start  -->
+            <div class="middle-container">
+                <div class="story-wrapper">
+                    <span class="story-scroll left bx bx-chevron-left" id="scrollLeft" onclick="scrollElement('.story-wrapper', 'left');"></span>
+                    <div class="story user">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Ajouter à votre story</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="src/img/img.jpg">
+                        <div class="details">
+                            <p><span class="bx bx-plus"></span>Nekena rabeharivonjy</p>
+                        </div>
+                    </div>
+                    <span class="story-scroll right bx bx-chevron-right" id="scrollRight" onclick="scrollElement('.story-wrapper');"></span>
+                </div>
+                <div class="container">
+                    <div class="salon">
+                        <div class="content">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                            <img src="src/img/img.jpg">
+                        </div>
+                    </div>
+                    <div class="feeds">
+                        <div class="form">
+                            <img src="src/img/img.jpg"/>
+                            <input type="text" placeholder="Quoi de neuf, Nekena?"/>
+                        </div>
+                        <span class="feeds-action">
+                            <button>
+                                <span class="bx bxs-video"></span>
+                                Vidéo en direct
+                            </button>
+                            <button>
+                                <img src="src/icon/gallery.svg">
+                                Photo/vidéo
+                            </button>
+                            <button>
+                                <span class="bx bxs-flag-alt"></span>
+                                événement marquant
+                            </button>
+                        </span>
+                    </div>
+                    <div class="posts">
+                        <header>
+                            <div class="profile-pic">
+                                <img src="src/img/img.jpg">
+                            </div>
+                            <div class="post-detais">
+                                <div class="profile">
+                                    <a href="">Rojo Rabeharivonjy</a>
+                                    est avec <a href="">Nomena Fandresena Andrianarivo</a> et <a href="">Nekena</a>
+                                </div>
+                                <div class="time">
+                                    <small>6h - <span class="bx bx-globe"></span></small>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <span class="bx bx-dots-horizontal-rounded"></span>
+                            </div>
+                        </header>
+                        <div class="post-text">
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eligendi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit modi voluptates temporibus eveniet vel impedit?</p>
+                        </div>
+                        <div class="post-content">
+                            <img src="src/img/img.jpg">
+                        </div>
+                        <footer>
+                            <div class="post-action-counting">
+                                <p><a href="">195 Réaction</a></p>
+                                <p><a href="">1 partage</a></p>
+                            </div>
+                            <div class="post-action">
+                                <button>
+                                    <span class="bx bx-like"></span> J'aime
+                                </button>
+                                <button>
+                                    <span class="bx bx-message-alt"></span> Commenter
+                                </button>
+                                <button>
+                                    <span class="bx bx-share"></span> Partager
+                                </button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <!--  middle container end  -->
+            <!--  right container start  -->
+            <div class="right-container">
+                <div class="container">
+                    <div class="card">
+                        <header>
+                            <div class="title">
+                                <img src="src/icon/friends.png">
+                                <h3>invitation</h3>
+                            </div>
+                            <span class="bx bx-dots-horizontal-rounded"></span>
+                        </header>
+                        <div class="container">
+                            <div class="pf-pic">
+                                <img src="src/img/img.jpg">
+                            </div>
+                            <div class="details">
+                                <div class="head">
+                                    <a href="">Ta Chanie</a>
+                                    <small>58 min</small>
+                                </div>
+                                <div class="commun">
+                                    <img src="src/img/img.jpg">
+                                    2 amis en commun
+                                </div>
+                                <div class="action">
+                                    <button>Confirmer</button>
+                                    <button>Supprimer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-wrapper">
+                    <h3>Sponsorisé</h3>
+                    <a href="" class="content">
+                        <div class="image">
+                            <img src="src/img/img.jpg">
+                        </div>
+                        <div class="details">
+                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, fugiat? Lorem ipsum dolor sit amet.</p>
+                            <span>www.facebook.com</span>
+                        </div>
+                    </a>
+                    <a href="" class="content">
+                        <div class="image">
+                            <img src="src/img/img.jpg">
+                        </div>
+                        <div class="details">
+                            <p class="description">Lorem iorem ipsum dolor sit amet.</p>
+                            <span>www.facebook.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--  right container end  -->
+        </div>
+    </div>
+    <!--  CONTAINER END  -->
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
